@@ -1,0 +1,41 @@
+/* Adicione estilos personalizados aqui, se necessário */
+        .toast-custom {
+            z-index: 9999;
+            position: fixed;
+            top: 1rem;
+            right: 1.6rem;
+            width: 300px;
+            /* largura personalizável */
+            margin-bottom: 1rem;
+        }
+
+        .toast-body-custom {
+            display: flex;
+            align-items: center;
+            /* Alinha verticalmente o conteúdo do toast */
+            padding: 0.5rem;
+            /* Adiciona espaçamento interno ao redor do texto */
+        }
+
+        .toast-icon {
+            margin-right: 0.5rem;
+        }
+
+        .toast-footer {
+            height: 4px;
+            background-color: white;
+            animation: toastDuration 5s linear forwards;
+            /* Duração da animação definida como 5s */
+        }
+
+        @keyframes toastDuration {
+            from {
+                width: 100%;
+                /* Largura inicial da linha */
+            }
+
+            to {
+                width: 0%;
+                /* Largura final da linha (oculto) */
+            }
+        }
